@@ -23,10 +23,10 @@ class Config(object):
     )
     TG_BOT_USERNAME = None
     # المنطقه الزمنيه احصل عليها من هنا  http://www.timezoneconverter.com/cgi-bin/findzone.tzc
-    TZ = os.environ.get("TZ", "Africa/Cairo")
+    TZ = "Africa/Cairo"
     # رابط الريبو
     UPSTREAM_REPO = os.environ.get(
-        "UPSTREAM_REPO", "https://github.com/Mahmoud7100/GHOST_USERBOT"
+        "UPSTREAM_REPO", "https://github.com/JUSTGHOOST/GHOST_USERBOT"
     )
     # ملفات خارجيه اضافيه
     EXTERNAL_REPO = os.environ.get("EXTERNAL_REPO", None)
