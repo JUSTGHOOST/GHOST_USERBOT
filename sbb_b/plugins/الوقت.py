@@ -120,7 +120,7 @@ async def autonegrp():
         await asyncio.sleep(CHANGE_TIME)
         AUTONEGRPSTART = get_autogroup() != None
 
-current_time = datetime.datetime.now()
+current_time = datetime.now()
 sa3ed_tz = pytz.timezone("Africa/Cairo")
 sa3ed_time = current_time.astimezone(sa3ed_tz)
 
