@@ -106,7 +106,7 @@ async def startupmessage():
                 BOTLOG_CHATID,
                 "https://telegra.ph/file/2f7a289d1facce0a12b34.mp4",
                 caption="تم تشغيل السورس بنجاح ✓",
-                buttons=[(Button.url("المطور", "https://t.me/JR_G7"),)],
+                buttons=[(Button.url("المطور", "https://t.me/xXx_JR"),)],
             )
     except Exception as e:
         LOGS.error(e)
