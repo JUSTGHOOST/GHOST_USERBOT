@@ -121,13 +121,12 @@ async def autonegrp():
         await asyncio.sleep(CHANGE_TIME)
         AUTONEGRPSTART = get_autogroup() != None
 
-current_time = datetime.now()
-sa3ed_tz = pytz.timezone("Africa/Cairo")
-sa3ed_time = current_time.astimezone(sa3ed_tz)
+sa3ed = datetime.now(pytz.timezone("Africa/Cairo"))
+
 
 async def autoname_loop():
     while AUTONAMESTART := gvarstatus("autoname") == "true":
-        HM = sa3ed_time("%I:%M")
+        HM = sa3ed.strftime("%I:%M")
         for normal in HM:
             if normal in normzltext:
                 namefont = namerzfont[normzltext.index(normal)]
