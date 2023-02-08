@@ -43,7 +43,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
                 [
                     Button.inline("اضافات", data="EXTRACMD"),
                     Button.inline("الميوزك", data="MSHKLMSIC"),
-                ],[Button.url("• المطـور •", "https://t.me/JR_G7")],
+                ],[Button.url("• المطـور •", "https://t.me/xXx_JR")],
 
             ]
             result = builder.article(
@@ -73,7 +73,7 @@ async def repo(event):
 @check_owner
 async def _(event):
     butze = [
-        [Button.url("• المطـور •", "https://t.me/JR_G7")],
+        
         [
             Button.inline("البوت", data="BOTCMD4"),
             Button.inline("الجروب", data="admincmd_s"),
@@ -89,7 +89,7 @@ async def _(event):
         [
             Button.inline("اضافات", data="EXTRACMD"),
             Button.inline("الميوزك", data="MSHKLMSIC"),
-        ],
+        ],[Button.url("• المطـور •", "https://t.me/xXx_JR")],
     ]
     await event.edit(buttons=butze)
 
